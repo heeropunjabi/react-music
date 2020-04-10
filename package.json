@@ -7,6 +7,7 @@
     "lib",
     "umd"
   ],
+  "homepage": "https://heeropunjabi.github.io/react-music",
   "scripts": {
     "start": "webpack-dev-server --hot --inline --port 3002 --config webpack.config.dev.js --content-base public/",
     "build": "babel src -d lib --copy-files",
@@ -16,13 +17,16 @@
     "lint": "eslint src demo --fix",
     "flow-check": "flow check",
     "flow": "flow",
-    "umd": "npm run clean-umd && webpack --config webpack.config.umd.js"
+    "umd": "npm run clean-umd && webpack --config webpack.config.umd.js",
+    "predeploy": "npm run dist",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Ken Wheeler",
   "license": "MIT",
   "repository": "https://github.com/FormidableLabs/react-music",
   "dependencies": {
     "audio-contour": "0.0.1",
+    "gh-pages": "^2.2.0",
     "note-parser": "^2.0.0",
     "prop-types": "^15.6.0",
     "tunajs": "^0.4.5",
