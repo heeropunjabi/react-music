@@ -2830,7 +2830,7 @@
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
+	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
 
 	var _react = __webpack_require__(1);
 
@@ -2852,15 +2852,15 @@
 	  _reactHotLoader.AppContainer,
 	  null,
 	  _react2.default.createElement(_demo2.default, null)
-	), document.getElementById('root'));
+	), document.getElementById("root"));
 
-	module.hot.accept('./demo', function () {
+	module.hot && module.hot.accept("./demo", function () {
 	  var NextDemo = __webpack_require__(6).default;
 	  _reactDom2.default.render(_react2.default.createElement(
 	    _reactHotLoader.AppContainer,
 	    null,
 	    _react2.default.createElement(NextDemo, null)
-	  ), document.getElementById('root'));
+	  ), document.getElementById("root"));
 	});
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(51)(module)))
 
